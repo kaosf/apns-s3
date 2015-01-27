@@ -7,12 +7,12 @@ module ApnsS3
   #
   # @param [String] aws_access_key_id
   # @param [String] aws_secret_access_key
-  # @param [String] bucket_name
+  # @param [String] bucketname
   # @param [String] filename PEM filename
   def self.set_pemfile(
     aws_access_key_id: nil,
     aws_secret_access_key: nil,
-    bucket_name: nil,
+    bucketname: nil,
     filename: nil
   )
     unless File.exists? filename
@@ -20,7 +20,7 @@ module ApnsS3
         access_key_id: aws_access_key_id,
         secret_access_key: aws_secret_access_key
       )
-      bucket = s3.buckets[bucket_name]
+      bucket = s3.buckets[bucketname]
       object = bucket.objects[filename]
       File.open filename, 'wb' do |file|
         object.read do |chunk|
