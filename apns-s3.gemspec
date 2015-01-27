@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ka.kaosf@gmail.com"]
   spec.summary       = %q{APNs with pemfile on AWS S3}
   spec.description   = %q{APNs with pemfile on AWS S3}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/kaosf/apns-s3"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
