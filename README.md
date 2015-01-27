@@ -28,8 +28,8 @@ require 'apns-s3'
 ApnsS3.set_pemfile(
   aws_access_key_id: 'your-access-key-id',
   aws_secret_access_key: 'your-secret-access-key',
-  bucketname: 'bucketname including PEM file',
-  filename: 'PEM filename'
+  bucketname: 'bucketname-including-PEM-file',
+  filename: 'PEM-filename'
 )
 ```
 
@@ -45,7 +45,7 @@ APNS.send_notification(
 )
 
 # If you want to delete PEM file
-File.delete filename if File.exist? filename
+File.delete 'PEM-filename' if File.exist? 'PEM-filename'
 ```
 
 For `APNS` module's further information, refer
@@ -53,7 +53,7 @@ For `APNS` module's further information, refer
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/apns-s3/fork )
+1. Fork it ( https://github.com/kaosf/apns-s3/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
