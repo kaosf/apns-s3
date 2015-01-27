@@ -1,4 +1,4 @@
-# Apns::S3
+# APNs with pemfile on AWS S3
 
 Download PEM file from AWS S3 and set APNS module.
 
