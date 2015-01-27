@@ -1,6 +1,8 @@
 # Apns::S3
 
-TODO: Write a gem description
+Download PEM file from AWS S3 and set APNS module.
+
+This feature is useful on Heroku.
 
 ## Installation
 
@@ -20,7 +22,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'apns-s3'
+
+ApnsS3.set_pemfile(
+  aws_access_key_id: 'your-access-key-id',
+  aws_secret_access_key: 'your-secret-access-key',
+  bucketname: 'bucketname including PEM file',
+  filename: 'PEM filename'
+)
+```
+
+After that, you can send notifications normally.
+
+```ruby
+APNS.host = 'gateway.push.apple.com' # if not sandbox
+APNS.send_notification(
+  'your device token'
+  alert: 'alert message',
+  badge: 1,
+  sound: 'default'
+)
+
+# If you want to delete PEM file
+File.delete filename if File.exist? filename
+```
+
+For `APNS` module's further information, refer
+[jpoz/APNS](https://github.com/jpoz/APNS).
 
 ## Contributing
 
