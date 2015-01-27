@@ -1,6 +1,6 @@
 # APNs with pemfile on AWS S3
 
-Download PEM file from AWS S3 and set APNS module.
+Download PEM file from AWS S3 and set it to `APNS` module.
 
 This feature is useful on Heroku.
 
