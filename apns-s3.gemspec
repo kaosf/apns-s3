@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ApnsS3::VERSION
   spec.authors       = ["ka"]
   spec.email         = ["ka.kaosf@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{APNs with pemfile on AWS S3}
+  spec.description   = %q{APNs with pemfile on AWS S3}
   spec.homepage      = ""
   spec.license       = "MIT"
 
