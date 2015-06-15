@@ -1,5 +1,7 @@
 # APNs with pemfile on AWS S3
 
+[![Dependency Status](https://gemnasium.com/kaosf/apns-s3.svg)](https://gemnasium.com/kaosf/apns-s3)
+
 Download PEM file from AWS S3 and set it to `APNS` module.
 
 This feature is useful on Heroku.
