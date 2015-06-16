@@ -3,6 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/apns-s3.svg)](http://badge.fury.io/rb/apns-s3)
 [![Dependency Status](https://gemnasium.com/kaosf/apns-s3.svg)](https://gemnasium.com/kaosf/apns-s3)
 [![Build Status](https://travis-ci.org/kaosf/apns-s3.svg)](https://travis-ci.org/kaosf/apns-s3)
+[![Coverage Status](https://coveralls.io/repos/kaosf/apns-s3/badge.svg)](https://coveralls.io/r/kaosf/apns-s3)
 [![Code Climate](https://codeclimate.com/github/kaosf/apns-s3/badges/gpa.svg)](https://codeclimate.com/github/kaosf/apns-s3)
 
 Download PEM file from AWS S3 and set it to `APNS` module.
