@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/apns-s3.svg)](http://badge.fury.io/rb/apns-s3)
 [![Dependency Status](https://gemnasium.com/kaosf/apns-s3.svg)](https://gemnasium.com/kaosf/apns-s3)
+[![Build Status](https://travis-ci.org/kaosf/apns-s3.svg)](https://travis-ci.org/kaosf/apns-s3)
 
 Download PEM file from AWS S3 and set it to `APNS` module.
 
