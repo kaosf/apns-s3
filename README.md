@@ -28,12 +28,6 @@ Or install it yourself as:
 
 ## Usage
 
-### CAUTION from version 0.2
-
-You **MUST** speciry `region` e.g. `us-east-1` or `ap-northeast-1`.
-
-All regions are listed [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
-
 ```ruby
 require 'apns-s3'
 
@@ -41,10 +35,12 @@ ApnsS3.set_pemfile(
   region: 'us-east-1',
   aws_access_key_id: 'your-access-key-id',
   aws_secret_access_key: 'your-secret-access-key',
-  bucketname: 'bucketname-including-PEM-file',
+  bucketname: 'the-name-of-bucket-including-PEM-file',
   filename: 'PEM-filename'
 )
 ```
+
+All region names are listed [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
 
 After that, you can send notifications normally.
 
