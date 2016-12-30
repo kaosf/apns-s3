@@ -1,5 +1,5 @@
-require 'coveralls'
 require 'simplecov'
+require 'coveralls'
 require 'test/unit'
 require 'test/unit/rr'
 
