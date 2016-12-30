@@ -8,6 +8,7 @@ Rake::TestTask.new do |t|
   #   http://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
   require 'coveralls'
   Coveralls.wear!
+  SimpleCov.command_name 'Unit Tests'
 
   t.libs << "test"
   t.test_files = Dir["test/**/test_*.rb"]
