@@ -47,7 +47,7 @@ After that, you can send notifications normally.
 ```ruby
 APNS.host = 'gateway.push.apple.com' # if not sandbox
 APNS.send_notification(
-  'your device token'
+  'your device token',
   alert: 'alert message',
   badge: 1,
   sound: 'default'
