@@ -9,8 +9,8 @@ if ENV['CI'] != 'true'
   SimpleCov.start
 end
 
-# require order ref. http://qiita.com/bsdmad/items/ab8b7d92d965df8bb2d8
-# ref.
-#   https://coveralls.zendesk.com/hc/en-us/articles/201769485-Ruby-Rails
+# require order ref.
+#   http://qiita.com/bsdmad/items/ab8b7d92d965df8bb2d8
+# ENV['CI'] != 'true" ref.
 #   http://stackoverflow.com/questions/12983137/how-do-detect-if-travis-ci-or-not
 #   http://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
