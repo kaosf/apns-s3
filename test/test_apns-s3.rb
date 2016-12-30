@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'test/unit/rr'
+require 'test_helper'
 require 'apns-s3'
 
 class TestApnsS3 < Test::Unit::TestCase
