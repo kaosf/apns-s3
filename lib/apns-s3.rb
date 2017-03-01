@@ -6,8 +6,10 @@ module ApnsS3
   # Set PEM file to APNS module
   #
   # @param [String] region
-  #   One of ap-northeast-1, ap-southeast-1, ap-southeast-2, eu-central-1,
-  #   eu-west-1, sa-east-1, us-east-1, us-west-1 and us-west-2.
+  #   One of
+  #     us-east-1, us-east-2, us-west-1, us-west-2, ca-central-1, eu-west-1,
+  #     eu-central-1, eu-west-2, ap-northeast-1, ap-northeast-2, ap-southeast-1,
+  #     ap-southeast-2, ap-south-1 and sa-east-1
   #
   #   All regions are listed here: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
   #
