@@ -24,7 +24,7 @@ module ApnsS3
     bucketname: nil,
     filename: nil
   )
-    unless File.exist? filename
+    unless pemfile_exist? filename
       credentials = Aws::Credentials.new(
         aws_access_key_id, aws_secret_access_key
       )
@@ -33,5 +33,9 @@ module ApnsS3
       s3.get_object response_target: filename, bucket: bucketname, key: filename
     end
     APNS.pem = filename
+  end
+
+  def self.pemfile_exist? filename
+    File.exist? filename
   end
 end
