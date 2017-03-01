@@ -7,13 +7,13 @@ class TestApnsS3 < Test::Unit::TestCase
   end
 
   test "pemfile exists" do
-    stub(File).exists?(@pem_filename) { true }
+    stub(File).exist?(@pem_filename) { true }
     mock(APNS).pem=(@pem_filename)
     ApnsS3.set_pemfile filename: @pem_filename
   end
 
   test "pemfile DOES NOT exist" do
-    stub(File).exists?(@pem_filename) { false }
+    stub(File).exist?(@pem_filename) { false }
     credentials_stub = Object.new
     stub(Aws::Credentials).new { credentials_stub }
     region = 'dummy-region-name'
