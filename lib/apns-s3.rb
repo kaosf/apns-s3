@@ -22,7 +22,7 @@ module ApnsS3
     bucketname: nil,
     filename: nil
   )
-    unless File.exists? filename
+    unless File.exist? filename
       credentials = Aws::Credentials.new(
         aws_access_key_id, aws_secret_access_key
       )
