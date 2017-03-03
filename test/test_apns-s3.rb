@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'fakefs/safe'
 require 'apns-s3'
 
 class TestApnsS3 < Test::Unit::TestCase
